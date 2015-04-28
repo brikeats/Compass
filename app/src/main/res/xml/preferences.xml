@@ -1,0 +1,68 @@
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:robobunny="http://robobunny.com">
+    
+    
+	<ListPreference
+	    android:key="pref_background_image"
+	    android:title="@string/settings_change_background_image"
+	    android:entries="@array/background_images"
+	    android:entryValues="@array/background_images"
+	    android:layout="@layout/custom_list_preference_layout"
+	    android:defaultValue="god"
+	     />
+	
+	<ListPreference
+	    android:key="pref_dynamics"
+	    android:title="@string/settings_change_dynamics"
+	    android:entries="@array/dynamics"
+	    android:entryValues="@array/dynamics"
+	    android:layout="@layout/custom_list_preference_layout"
+	    android:defaultValue="Springy"
+	     />
+	
+	<PreferenceScreen
+            android:key="custom_dynamics_preferencescreen"
+            android:title="Custom Dynamics">
+		
+		<com.example.compass.SeekBarPreference 
+		    android:key="pref_needle_mass" 
+		    android:title="Mass" 
+		    android:defaultValue="100" 
+		    android:max="200" 
+		    robobunny:min="10"
+		    />
+		
+		<com.example.compass.SeekBarPreference 
+		    android:key="pref_needle_drag" 
+		    android:title="Drag" 
+		    android:defaultValue="11" 
+		    android:max="100" 
+		    robobunny:min="10"
+		    />	
+		    
+		<com.example.compass.SeekBarPreference 
+		    android:key="pref_timestep" 
+		    android:title="Time Step" 
+		    android:defaultValue="20" 
+		    android:max="50" 
+		    robobunny:min="5"
+		    />	
+		
+	</PreferenceScreen>
+	
+	
+	<!-- 
+	<ListPreference
+	    android:key="pref_background_image"
+	    android:summary="pref_background_image"
+	    android:title="@string/settings_change_background_image"
+	    android:entries="@array/background_image_names"
+	    android:entryValues="@array/background_images"
+	    android:layout="@layout/custom_list_preference_layout"
+	     />
+	 -->
+
+	
+
+</PreferenceScreen>

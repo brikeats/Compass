@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Compass</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+    
+    <string name="settings_name">Settings</string>
+    <string name="settings_change_background_image">Background</string>
+    <string name="settings_change_dynamics">Dynamics</string>
+
+    <string name="set_heading_dialog_title">Heading</string>
+    <string name="set_heading_dialog_message">Set Heading</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    
+
+</resources>

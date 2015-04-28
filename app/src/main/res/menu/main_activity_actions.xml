@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/action_set_heading"
+          android:icon="@drawable/ic_action_8_directions"
+          android:title="action_set_heading"
+          android:showAsAction="ifRoom"
+          />
+    
+    <!-- Can take showAsAction out to show everything via overflow -->
+          
+    <item android:id="@+id/action_change_settings"
+          android:icon="@drawable/ic_action_overflow"
+          android:title="action_change_settings"
+          android:showAsAction="ifRoom"
+          />
+          
+    
+</menu>

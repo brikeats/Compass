@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+    <!-- Background -->
+    
+    <string-array
+        name="background_images">
+        <item>Classic Compass</item>
+        <item>Arrow</item>
+        <item>Finger</item>
+        <item>God</item>
+    </string-array>
+    
+    
+    <!-- Dynamics -->
+    
+    <string-array
+        name="dynamics">
+        <item>None</item>
+        <item>Smooth</item>
+        <item>Springy</item>
+        <item>Wobbly</item>
+        <item>Custom</item>
+    </string-array>
+    
+    
+    
+        
+    
+    
+</resources>
+
