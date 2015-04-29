@@ -4,20 +4,18 @@
     
     
 	<ListPreference
-	    android:key="pref_background_image"
-	    android:title="@string/settings_change_background_image"
+        android:title="@string/settings_change_background_image"
+        android:key="pref_background_image"
 	    android:entries="@array/background_images"
 	    android:entryValues="@array/background_images"
-	    android:layout="@layout/custom_list_preference_layout"
 	    android:defaultValue="god"
 	     />
 	
 	<ListPreference
-	    android:key="pref_dynamics"
-	    android:title="@string/settings_change_dynamics"
+        android:title="@string/settings_change_dynamics"
+        android:key="pref_dynamics"
 	    android:entries="@array/dynamics"
 	    android:entryValues="@array/dynamics"
-	    android:layout="@layout/custom_list_preference_layout"
 	    android:defaultValue="Springy"
 	     />
 	

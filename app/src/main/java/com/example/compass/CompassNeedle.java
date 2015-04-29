@@ -65,7 +65,7 @@ public class CompassNeedle{
 		speed += dt*torque/mass;
 		speed *= 1/drag;
 		angle += dt*speed;
-		
+
 		if (angle > Math.PI) angle -= 2*Math.PI;
 		if (angle < -Math.PI) angle += 2*Math.PI;
 		return angle;
