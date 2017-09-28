@@ -62,8 +62,6 @@ public class RotatableImage{
 			pivotX = 400; pivotY = 727/2;
 			bmWidth0 = 727; bmHeight0 = 727;
 			break;
-		//case COMPASS: // TODO
-			//break;
 		default:
 			bitmap = BitmapFactory.decodeResource(resources, R.drawable.god_dot);
 			imageAngle = (float)Math.toRadians(100);

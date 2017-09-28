@@ -49,12 +49,12 @@ public class MainActivity extends Activity implements SensorEventListener {
 		setContentView(R.layout.activity_main);
 				
 		sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
-						
-		compassView = (RotatableImageView)findViewById(R.id.compassView);
+
+        compassView = (RotatableImageView)findViewById(R.id.compassView);
 		compassView.setImage(RotatableImage.ImageName.GOD);
 		compassView.setNeedle(new CompassNeedle(CompassNeedle.Dynamics.WOBBLY));
 		compassView.invalidate();
-		
+
 		PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 		setStateFromPreferences();
 		
