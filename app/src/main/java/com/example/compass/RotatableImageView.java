@@ -70,9 +70,9 @@ public class RotatableImageView extends ImageView {
 	    // Use the same Matrix over and over again to minimize allocation in onDraw.
 	    matrix.reset();
 	    matrix.setRectToRect(imageRect, viewRect, Matrix.ScaleToFit.FILL);
-        matrix.postRotate((float) Math.toDegrees(compassAngle + Math.PI/2), viewRect.centerX(), viewRect.centerY());
+        matrix.postRotate((float) Math.toDegrees(compassAngle), viewRect.centerX(), viewRect.centerY());
 
-        // Finally, draw the bitmap using the matrix
+		// Finally, draw the bitmap using the matrix
         canvas.drawBitmap (image.getBitmap(), matrix, null);
 	}
 

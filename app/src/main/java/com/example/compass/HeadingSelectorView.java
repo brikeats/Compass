@@ -37,7 +37,8 @@ public class HeadingSelectorView extends View {
 	    parent = (MainActivity)context;
 	    paint.setAntiAlias(true);
 	    paint.setStyle(Paint.Style.FILL);    
-	    setBackgroundColor(Color.WHITE);       
+	    setBackgroundColor(Color.WHITE);
+        this.onWindowFocusChanged(true);
 	}
   
 	

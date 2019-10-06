@@ -102,7 +102,7 @@ public class MainActivity extends Activity implements SensorEventListener {
 	           public void onClick(DialogInterface dialog, int id) {}
 	       });
 		LayoutInflater inflater = getLayoutInflater();
-		builder.setView(inflater.inflate(R.layout.heading_dialog, null));
+        builder.setView(inflater.inflate(R.layout.heading_dialog, null));
 		AlertDialog dialog = builder.create();
 		dialog.show();
 	}
@@ -155,34 +155,38 @@ public class MainActivity extends Activity implements SensorEventListener {
 	
 	public void onWindowFocusChanged(boolean hasFocus) {
 	    super.onWindowFocusChanged(hasFocus);
-	    
-	    compassView.setAngle(0);
-	    compassView.invalidate();
+        compassView.invalidate();
     }
 		
 	@Override
 	public void onSensorChanged(SensorEvent event) {
-		
+
 		float[] rotVec = new float[3];
 		rotVec[0] = event.values[0];
 		rotVec[1] = event.values[1];
 		rotVec[2] = event.values[2];
-		
-		float[] R = new float[9];
+
+//        Log.d(TAG, "rot vect: "+rotVec[0]+", "+rotVec[1]+", "+rotVec[2]);
+
+
+        float[] R = new float[9];
 		SensorManager.getRotationMatrixFromVector (R, rotVec);
-		
+
 		float[] angles = new float[3];
 		SensorManager.getOrientation (R, angles);
-		
+//		Log.d(TAG, "angle: " + Math.toDegrees(angles[0]));
+
 		compassView.setAngle((float) (angles[0] + headingAngle));
 		compassView.invalidate();
 	}
-	
+
+
 	@Override
 	public void onAccuracyChanged(Sensor sensor, int accuracy) {
-		// TODO Auto-generated method stub		
+		// TODO Auto-generated method stub
 	}
-	
+
+
 	@Override
     protected void onResume() {
         super.onResume();
